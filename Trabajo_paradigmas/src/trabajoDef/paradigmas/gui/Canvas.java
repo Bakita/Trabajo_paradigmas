@@ -1,4 +1,4 @@
-package cl.paradigmas.gui;
+package trabajoDef.paradigmas.gui;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -58,5 +58,8 @@ public class Canvas extends JPanel {
 		this.dibujandoTmp = dibujandoTmp;
 	}
 	
+	public ArrayList<Dibujable> getArray(){
+		return dibujos;
+	}
 
 }

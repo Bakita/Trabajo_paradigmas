@@ -1,9 +1,9 @@
-package cl.paradigmas.modelo;
+package trabajoDef.paradigmas.figuras;
 
 import java.awt.Graphics;
 import java.awt.Point;
 
-import cl.paradigmas.gui.Dibujable;
+import trabajoDef.paradigmas.gui.Dibujable;
 
 public class Linea implements Dibujable{
 
@@ -31,6 +31,26 @@ public class Linea implements Dibujable{
 	}
 	public void setFin(Point fin) {
 		this.fin = fin;
+	}
+
+	@Override
+	public boolean estaDentro(int x, int y) {
+		return false;
+	}
+
+	@Override
+	public int getY() {
+		return 0;
+	}
+
+	@Override
+	public int getX() {
+		return 0;
+	}
+
+	@Override
+	public void setPosicion(int x, int y) {
+		
 	}
 	
 	

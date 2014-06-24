@@ -1,9 +1,8 @@
-package cl.paradigmas.gui;
+package trabajoDef.paradigmas.gui;
 
 import java.util.HashMap;
 
 import javax.swing.ButtonGroup;
-import javax.swing.JButton;
 import javax.swing.JToggleButton;
 import javax.swing.JToolBar;
 
@@ -11,18 +10,13 @@ public class ParadigmasToolBar extends JToolBar {
 	
 	private static final long serialVersionUID = 1L;
 	private HashMap<String, JToggleButton> botones;
-	private JButton btnLimpiar;
 	private ButtonGroup grupoBtn;
-	private Iconos img;
-	
 	public ParadigmasToolBar(){
 		setFloatable(false);
 		setOrientation(JToolBar.HORIZONTAL);
-		img = new Iconos();
-		btnLimpiar = new JButton(img.borra);
+		new Iconos();
 		botones = new HashMap<>();
 		grupoBtn = new ButtonGroup();
-		this.add(btnLimpiar);
 	}
 	
 	public void addBtn(String key, JToggleButton btn){
@@ -51,11 +45,6 @@ public class ParadigmasToolBar extends JToolBar {
 			this.add(btn);
 			grupoBtn.add(btn);
 		}
-		this.add(btnLimpiar);
-	}
-
-	public JButton getBtnLimpiar() {
-		return btnLimpiar;
 	}
 
 }

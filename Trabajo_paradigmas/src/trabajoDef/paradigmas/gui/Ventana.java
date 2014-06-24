@@ -1,4 +1,4 @@
-package cl.paradigmas.gui;
+package trabajoDef.paradigmas.gui;
 
 import java.awt.BorderLayout;
 import java.awt.Dimension;
